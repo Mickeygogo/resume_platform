@@ -1,11 +1,11 @@
 {
-  "name": "visResumeMook",
+  "name": "resume_platform",
   "version": "1.0.0",
   "description": "发财之路",
   "main": "./app/main/electron.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start:main": "electron ./app/main/electron.ts"
+    "start:main": "webpack --config ./webpack/webpack.main.dev.js && electron ./dist/electron.js",
+    "start:render": "webpack-dev-server --config ./webpack/webpack.render.dev.js"
   },
   "keywords": [],
   "author": "mickey_wang",

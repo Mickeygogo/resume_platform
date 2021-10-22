@@ -1,4 +1,4 @@
-const path = require('path'),
+const path = require('path');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 module.exports = {
@@ -8,7 +8,7 @@ module.exports = {
         extensions:['.js','.jsx','.ts','.tsx'],
         // 配置别名
         alias:{
-            'Src':path.join(_dirname,'../','app/render'),
+            'Src':path.join(__dirname,'../','app/render'),
         }
     },
 
