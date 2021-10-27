@@ -1,3 +1,11 @@
+/*
+ * @Author: your name
+ * @Date: 2021-10-25 13:56:28
+ * @LastEditTime: 2021-10-27 20:03:08
+ * @LastEditors: your name
+ * @Description: In User Settings Edit
+ * @FilePath: /resume_platform/webpack/webpack.render.dev.js
+ */
 /* eslint-disable @typescript-eslint/no-require-imports */
 const path = require('path');
 const webpackMerge = require('webpack-merge');
@@ -27,7 +35,7 @@ const devConfig = {
     rules: [
       {
         test: /\.css$/,
-        use: ['style-loader', 'css-loader', 'postcss-loader'],
+        use: ['style-loader', 'css-loader', 'postcss-loader', 'url-loader'],
       },
       {
         test: /\.less$/,

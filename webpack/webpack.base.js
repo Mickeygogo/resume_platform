@@ -9,6 +9,7 @@ module.exports = {
     // 配置别名
     alias: {
       Src: path.join(__dirname, '../', 'app/render'),
+      Components: path.join(__dirname, '../', 'app/render/components'),
     },
   },
 

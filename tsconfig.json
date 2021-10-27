@@ -15,7 +15,8 @@
         "allowSyntheticDefaultImports": true,
         "baseUrl": "./",
         "paths": {
-            "Src/*":["./app/render/*"]
+            "Src/*":["./app/render/*"],
+            "Components/*":["./app/render/components"]
         },
         "moduleResolution": "node",
     },

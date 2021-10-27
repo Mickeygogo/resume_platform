@@ -1,13 +1,14 @@
 /*
  * @Author: your name
  * @Date: 2021-10-25 15:42:07
- * @LastEditTime: 2021-10-26 20:43:28
+ * @LastEditTime: 2021-10-27 19:48:44
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /resume_platform/app/render/common/route/router.config.ts
  */
 import Root from '../../page/root';
 import Resume from '../../page/resume';
+import GeneralLayout from 'Components/general-layout';
 /**
  * @description: 路由配置
  * @param {*}  path
@@ -30,14 +31,32 @@ const routes = [
     title: 'Home',
     desc: '首页',
     exact: true,
-    component: Root,
+    component: GeneralLayout,
+    children: [
+      {
+        path: '/',
+        title: 'Home',
+        desc: '首页',
+        exact: true,
+        component: Root,
+      },
+    ],
   },
   {
     path: '/',
-    title: 'Home',
+    title: 'Resume',
     desc: '简历',
     exact: true,
-    component: Resume,
+    component: GeneralLayout,
+    children: [
+      {
+        path: '/',
+        title: 'Resume',
+        desc: '简历',
+        exact: true,
+        component: Resume,
+      },
+    ],
   },
 ];
 

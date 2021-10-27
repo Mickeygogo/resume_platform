@@ -1,5 +1,11 @@
 import React from 'react';
+import LogoTitle from 'Components/logo-title';
+import FooterSourceInfo from 'Components/footer-source-info';
+import './index.less';
 
 export default function Root() {
-  return <div>这里是页面的首页</div>;
+  return (
+    <div styleName="root">
+    </div>
+  );
 }
