@@ -1,8 +1,10 @@
 .general-layout {
     width:100%;
-    height:100%;
+    height:100vh;
     background-image:linear-gradient(to bottom left, #5CA698, #3C4470);
+    -webkit-user-select: none;
     .contents {
-        height:auto;
+        // todo 这快的高度不懂为啥老是有问题；
+        height:calc(100vh - 64px)
     }
 }

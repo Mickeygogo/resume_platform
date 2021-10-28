@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2021-10-27 19:13:35
- * @LastEditTime: 2021-10-27 19:55:09
+ * @LastEditTime: 2021-10-28 15:15:58
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /resume_platform/app/render/components/general-layout/index.tsx

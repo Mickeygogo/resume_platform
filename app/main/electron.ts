@@ -9,7 +9,7 @@ console.log(isDev_ENV);
 const createWindow = () => {
   // 创建浏览器窗口
   const mainWindow = new BrowserWindow({
-    width: 1000,
+    width: 1200,
     height: 700,
     titleBarStyle: 'hidden',
     skipTaskbar: true,

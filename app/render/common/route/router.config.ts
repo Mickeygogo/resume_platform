@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2021-10-25 15:42:07
- * @LastEditTime: 2021-10-27 19:48:44
+ * @LastEditTime: 2021-10-28 14:30:58
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /resume_platform/app/render/common/route/router.config.ts
@@ -43,14 +43,14 @@ const routes = [
     ],
   },
   {
-    path: '/',
+    path: '/resume',
     title: 'Resume',
     desc: '简历',
     exact: true,
     component: GeneralLayout,
     children: [
       {
-        path: '/',
+        path: '/resume',
         title: 'Resume',
         desc: '简历',
         exact: true,

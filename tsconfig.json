@@ -16,7 +16,8 @@
         "baseUrl": "./",
         "paths": {
             "Src/*":["./app/render/*"],
-            "Components/*":["./app/render/components"]
+            "Components/*":["./app/render/components"],
+            "Common/*":["./app/render/common"]
         },
         "moduleResolution": "node",
     },

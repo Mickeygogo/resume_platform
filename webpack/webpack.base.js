@@ -1,3 +1,11 @@
+/*
+ * @Author: your name
+ * @Date: 2021-10-25 13:56:28
+ * @LastEditTime: 2021-10-28 13:42:11
+ * @LastEditors: Please set LastEditors
+ * @Description: In User Settings Edit
+ * @FilePath: /resume_platform/webpack/webpack.base.js
+ */
 const path = require('path');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
@@ -10,6 +18,7 @@ module.exports = {
     alias: {
       Src: path.join(__dirname, '../', 'app/render'),
       Components: path.join(__dirname, '../', 'app/render/components'),
+      Common: path.join(__dirname, '../', 'app/render/common'),
     },
   },
 
