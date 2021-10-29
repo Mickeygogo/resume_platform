@@ -1,12 +1,13 @@
 /*
  * @Author: your name
  * @Date: 2021-10-28 11:52:06
- * @LastEditTime: 2021-10-28 14:30:06
+ * @LastEditTime: 2021-10-29 14:13:37
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /resume_platform/app/render/common/constants/index.ts
  */
 
+// 首页展示的内容的常量;
 export const navMenu = [
   {
     label: '官网',

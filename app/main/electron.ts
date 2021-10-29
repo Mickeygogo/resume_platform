@@ -1,8 +1,23 @@
+/*
+ * @Author: your name
+ * @Date: 2021-10-25 13:56:28
+ * @LastEditTime: 2021-10-29 15:29:52
+ * @LastEditors: Please set LastEditors
+ * @Description: In User Settings Edit
+ * @FilePath: /resume_platform/app/main/electron.ts
+ */
 import path from 'path';
-import { app, BrowserWindow } from 'electron';
+import { app, BrowserWindow, ipcMain } from 'electron';
 
 // 判断当前环境是不是development
 const isDev_ENV = process.env.NODE_ENV === 'development';
+
+// 获取程序绝对地址
+const ROOT_PATH = path.join(app.getAppPath(), '../');
+// 监听渲染进程发的消息并回复
+ipcMain.on('get-root-path', (event, arg) => {
+  event.reply('reply-root-path', ROOT_PATH);
+});
 
 console.log(isDev_ENV);
 

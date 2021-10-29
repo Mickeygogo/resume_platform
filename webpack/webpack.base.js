@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2021-10-25 13:56:28
- * @LastEditTime: 2021-10-28 13:42:11
+ * @LastEditTime: 2021-10-29 14:59:32
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /resume_platform/webpack/webpack.base.js
@@ -19,6 +19,8 @@ module.exports = {
       Src: path.join(__dirname, '../', 'app/render'),
       Components: path.join(__dirname, '../', 'app/render/components'),
       Common: path.join(__dirname, '../', 'app/render/common'),
+      Store: path.join(__dirname, '../', 'app/render/store'),
+      Utils: path.join(__dirname, '../', 'app/render/common/utils'),
     },
   },
 

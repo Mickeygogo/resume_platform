@@ -17,7 +17,9 @@
         "paths": {
             "Src/*":["./app/render/*"],
             "Components/*":["./app/render/components"],
-            "Common/*":["./app/render/common"]
+            "Common/*":["./app/render/common"],
+            "Store/*":["./app/render/store"],
+            "Utils/*":["./app/render/common/utils"],
         },
         "moduleResolution": "node",
     },

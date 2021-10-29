@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2021-10-27 20:47:36
- * @LastEditTime: 2021-10-28 14:45:24
+ * @LastEditTime: 2021-10-29 15:05:38
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /resume_platform/app/render/page/root/index.tsx
@@ -17,9 +17,6 @@ import './index.less';
 
 export default function Root() {
   const history = useHistory();
-
-  console.log(history, 'history');
-
   const showNavMenu = (navArr) => {
     return navArr.map((item) => {
       const { href, path, label, imgUrl } = item || {};
